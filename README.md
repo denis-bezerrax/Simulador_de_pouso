@@ -4,7 +4,7 @@
 <h2>⚙️ Instruções de uso</h2>
 <p>Baixe o executável e execute no seu sistema operacional, caso o antivírus bloqueie, é devido ao fato da certificação de desenvolvimento da Microsoft não estar presente, no entanto, apenas prossiga que o programa irá iniciar normalmente. Caso queira rodar no seu IDE, baixe os arquivos do repositório e rode o arquivo "main.py". No segundo método de execução é necessário importar as bibliotecas, então preste atenção nisso para um bom funcionamento do programa.</p>
 
-<h2>👥 Desenvolvedores</h2>
+<h2>👨‍💻 Desenvolvedores</h2>
 
 <table>
   <tr>
