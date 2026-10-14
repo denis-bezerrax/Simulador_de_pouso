@@ -1,7 +1,8 @@
 <h1 align="center">Missão Aurora - Simulador de pouso</h1>
 <h2>📑 Sobre o projeto</h2>
-
+<p>O projeto é um simulador de pouso em Marte, sendo desenvolvido ao máximo de acordo com a realidade, tendo sido usado conceitos da física.</p>
 <h2>⚙️ Instruções de uso</h2>
+<p>Baixe o executável e execute no seu sistema operacional, caso o antivírus bloqueie, é devido ao fato da certificação de desenvolvimento da Microsoft não estar presente, no entanto, apenas prossiga que o programa irá iniciar normalmente.</p>
 
 <h2>👥 Autores</h2>
 
