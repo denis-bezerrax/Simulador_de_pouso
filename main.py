@@ -21,11 +21,7 @@ class Aplicativo(ctk.CTk):
         #1.1.1
         super().__init__()
         self.title("Missão Aurora - Simulador de pouso")
-<<<<<<< HEAD
         self.geometry("850x700")
-=======
-        self.geometry("800x700")
->>>>>>> bbb50b7 (Atualização)
 
         # 1.1.3 Configuração da grade
         self.grid_rowconfigure(0, weight=1)
@@ -1824,7 +1820,7 @@ class Aplicativo(ctk.CTk):
                 self.landing_id = self.after(100, landing)
                 
 
-            
+
         # 1.2.10 Função Simulação
         def start():
             try:
