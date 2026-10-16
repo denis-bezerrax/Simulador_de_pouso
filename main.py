@@ -1538,6 +1538,7 @@ class Aplicativo(ctk.CTk):
                 densidade = calcular_densidade(self.altitude)
                 dt = 0.1  # intervalo de simulação em segundos
 
+                # Calcula o consumo
                 consumo = calcular_consumo(
                     self.impulso,
                     dt,
@@ -1820,7 +1821,7 @@ class Aplicativo(ctk.CTk):
                 self.landing_id = self.after(100, landing)
                 
 
-
+            
         # 1.2.10 Função Simulação
         def start():
             try:
@@ -1930,7 +1931,7 @@ class Aplicativo(ctk.CTk):
         self.tempo_total += 1
         self.minutos = self.tempo_total // 60
         self.segundos = self.tempo_total % 60
-        self.time_total_visualizador.configure(text=f"Tempo: {self.minutos:02d}:{self.segundos:02d}")
+        self.time_total_visualizador.configure(text=f"Tempo total: {self.minutos:02d}:{self.segundos:02d}")
 
         self.cronometro_id = self.after(1000, self.cronometro)
     
@@ -2164,7 +2165,7 @@ class Aplicativo(ctk.CTk):
         self.canvas.itemconfigure("paraquedas", state="hidden")
 
         # Resto
-        self.time_total_visualizador = ctk.CTkLabel(self.aba_right, text=f"Tempo: 00:00")
+        self.time_total_visualizador = ctk.CTkLabel(self.aba_right, text=f"Tempo total: 00:00")
         self.time_total_visualizador.grid(row=2, columnspan=2)
         # Configura o espaço das duas colunas
         self.aba_right.grid_columnconfigure((0, 1), weight=1, uniform="colunas")
