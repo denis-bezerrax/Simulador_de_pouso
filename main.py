@@ -613,6 +613,7 @@ class Aplicativo(ctk.CTk):
             self.points = 0
             self.modulos_sucesso = 0
             self.atualizar_retrofoguete(False)
+            self.tempo_total = 0
                 
         def next_pag():
             try:
@@ -622,11 +623,11 @@ class Aplicativo(ctk.CTk):
                     self.mass_habitat = float(self.text_mass_habitat_entry.get())
                     self.cc_habitat = self.text_cc_habitat_entry.get()
 
-                    if self.fuel_habitat > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_habitat > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas", wraplength=400)
                         return
-                    if self.mass_habitat > 3000 or self.mass_habitat < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_habitat > 2500 or self.mass_habitat < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 1500 quilogramas para um pouso seguro", wraplength=400)
                         return
                         
                 elif self.pag_actualy == 2:
@@ -635,11 +636,11 @@ class Aplicativo(ctk.CTk):
                     self.mass_energy = float(self.text_mass_energy_entry.get())
                     self.cc_energy = self.text_cc_energy_entry.get()
 
-                    if self.fuel_energy > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_energy > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas.", wraplength=400)
                         return
-                    if self.mass_energy > 3000 or self.mass_energy < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_energy > 2500 or self.mass_energy < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 1500 quilogramas para um pouso seguro.", wraplength=400)
                         return
 
                 elif self.pag_actualy == 3:
@@ -648,11 +649,11 @@ class Aplicativo(ctk.CTk):
                     self.mass_lc = float(self.text_mass_lc_entry.get())
                     self.cc_lc = self.text_cc_lc_entry.get()
 
-                    if self.fuel_lc > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_lc > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas.", wraplength=400)
                         return
-                    if self.mass_lc > 3000 or self.mass_lc < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_lc > 2500 or self.mass_lc < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 1500 quilogramas para um pouso seguro.", wraplength=400)
                         return
                 
                 elif self.pag_actualy == 4:
@@ -661,11 +662,11 @@ class Aplicativo(ctk.CTk):
                     self.mass_logistic = float(self.text_mass_logistic_entry.get())
                     self.cc_logistic = self.text_cc_logistic_entry.get()
 
-                    if self.fuel_logistic > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_logistic > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas.", wraplength=400)
                         return
-                    if self.mass_logistic > 3000 or self.mass_logistic < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_logistic > 2500 or self.mass_logistic < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro.", wraplength=400)
                         return
                 
                 elif self.pag_actualy == 5:
@@ -674,11 +675,11 @@ class Aplicativo(ctk.CTk):
                     self.mass_sm = float(self.text_mass_sm_entry.get())
                     self.cc_sm = self.text_cc_sm_entry.get()
 
-                    if self.fuel_sm > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_sm > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas.", wraplength=400)
                         return
-                    if self.mass_sm > 3000 or self.mass_sm < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_sm > 2500 or self.mass_sm < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 1500 quilogramas para um pouso seguro.", wraplength=400)
                         return
                 elif self.pag_actualy == 6:
                     # 1.2.8.6 Estação
@@ -686,14 +687,14 @@ class Aplicativo(ctk.CTk):
                     self.mass_es = float(self.text_mass_es_entry.get())
                     self.cc_es = self.text_cc_es_entry.get()
 
-                    if self.fuel_es > 1500:
-                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 1500 quilogramas")
+                    if self.fuel_es > 2500:
+                        self.box_text_information.configure(text="A quantidade de combustível do módulo não pode ultrapassar 2500 quilogramas.", wraplength=400)
                         return
-                    if self.mass_es > 3000 or self.mass_es < 100:
-                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 3000 quilogramas, sendo fortemente recomendado não passar de 2500 quilogramas para um pouso seguro", wraplength=400)
+                    if self.mass_es > 2500 or self.mass_es < 100:
+                        self.box_text_information.configure(text="A quantidade recomendada de massa do módulo deve estar entre 100 e 2500 quilogramas, sendo fortemente recomendado não passar de 1500 quilogramas para um pouso seguro.", wraplength=400)
                         return
             except:
-                self.box_text_information.configure(text="Preencha os campos com algum valor")
+                self.box_text_information.configure(text="Preencha os campos com algum valor.")
                 return
             if self.pag_actualy < 6:
                 self.pag.grid_forget()
@@ -1141,6 +1142,7 @@ class Aplicativo(ctk.CTk):
                 self.aceleracao_visulizador.configure(text=f"Aceleração: {self.aceleracao:.2f} m/s²")
                 self.altitude_visulizador.configure(text=f"Altitude: {self.altitude:.2f} metros")
                 self.empuxo_visualizador.configure(text=f"Empuxo: {self.impulso:.2f} N")
+                self.atualizar_retrofoguete(self.impulso > 0)
 
             elif nome == "Laboratório científico":
                 if self.fuel_lc < 100:
@@ -1266,6 +1268,7 @@ class Aplicativo(ctk.CTk):
                 self.aceleracao_visulizador.configure(text=f"Aceleração: {self.aceleracao:.2f} m/s²")
                 self.altitude_visulizador.configure(text=f"Altitude: {self.altitude:.2f} metros")
                 self.empuxo_visualizador.configure(text=f"Empuxo: {self.impulso:.2f} N")
+                self.atualizar_retrofoguete(self.impulso > 0)
 
             elif nome == "Logística":
                 if self.fuel_logistic < 100:
@@ -1391,6 +1394,7 @@ class Aplicativo(ctk.CTk):
                 self.aceleracao_visulizador.configure(text=f"Aceleração: {self.aceleracao:.2f} m/s²")
                 self.altitude_visulizador.configure(text=f"Altitude: {self.altitude:.2f} metros")
                 self.empuxo_visualizador.configure(text=f"Empuxo: {self.impulso:.2f} N")
+                self.atualizar_retrofoguete(self.impulso > 0)
 
             elif nome == "Suporte médico":
                 if self.fuel_sm < 100:
@@ -1516,6 +1520,7 @@ class Aplicativo(ctk.CTk):
                 self.aceleracao_visulizador.configure(text=f"Aceleração: {self.aceleracao:.2f} m/s²")
                 self.altitude_visulizador.configure(text=f"Altitude: {self.altitude:.2f} metros")
                 self.empuxo_visualizador.configure(text=f"Empuxo: {self.impulso:.2f} N")
+                self.atualizar_retrofoguete(self.impulso > 0)
 
             elif nome == "Estação":
                 if self.fuel_es < 100:
@@ -1642,6 +1647,7 @@ class Aplicativo(ctk.CTk):
                 self.aceleracao_visulizador.configure(text=f"Aceleração: {self.aceleracao:.2f} m/s²")
                 self.altitude_visulizador.configure(text=f"Altitude: {self.altitude:.2f} metros")
                 self.empuxo_visualizador.configure(text=f"Empuxo: {self.impulso:.2f} N")
+                self.atualizar_retrofoguete(self.impulso > 0)
 
             if self.altitude <= 0:
                 self.altitude = 0
@@ -1713,7 +1719,7 @@ class Aplicativo(ctk.CTk):
                         self.modulo_lc.configure(text=f"Pouso do módulo de laboratório científico: {self.pouso_lc}")
                         self.modulo_lc.pack(padx=(5,5))
                     elif nome == "Logística":
-                        self.pouso_logistic = "Carga danificada"
+                        self.pouso_logistic = "carga danificada"
                         self.modulo_logistic.configure(text=f"Pouso do módulo logística: {self.pouso_logistic}")
                         self.modulo_logistic.pack(padx=(5,5))
                     elif nome == "Suporte médico":
@@ -1856,6 +1862,9 @@ class Aplicativo(ctk.CTk):
             if self.landing_id is not None:
                 self.after_cancel(self.landing_id)
                 self.landing_id = None
+            if self.cronometro_id is not None:
+                self.after_cancel(self.cronometro_id)
+                self.cronometro_id = None
 
             self.pag.grid_forget()
             self.box_text_information.configure(text="")
@@ -1872,7 +1881,7 @@ class Aplicativo(ctk.CTk):
 
         # Caixa de texto
         
-        self.box_text_information = ctk.CTkLabel(self.aba_left, text="")
+        self.box_text_information = ctk.CTkLabel(self.aba_left, text="", wraplength=100)
         self.box_text_information.grid(row=5, columnspan=2, pady=(5,5))
 
 
@@ -1898,6 +1907,8 @@ class Aplicativo(ctk.CTk):
             self.canvas.move("paraquedas", 0, deslocamento_y)
             self.canvas.move("retro", 0, deslocamento_y)
 
+    
+
     def reposicionar_nave(self):
         caixa = self.canvas.bbox("nave")
 
@@ -1910,10 +1921,22 @@ class Aplicativo(ctk.CTk):
             self.canvas.move("paraquedas", 0, -65 - caixa_paraquedas[1])
 
         caixa_retro = self.canvas.bbox("retro")
+        caixa_nave = self.canvas.bbox("nave")
 
-        if caixa_retro:
-            self.canvas.move("retro", 0, 10 - caixa_retro[1])
+        if caixa_retro and caixa_nave:
+            x_retro = (caixa_nave[0] + caixa_nave[2]) / 2
+            y_retro = caixa_nave[3]
 
+            x_atual = (caixa_retro[0] + caixa_retro[2]) / 2
+            y_atual = caixa_retro[1]
+
+            self.canvas.move(
+                "retro",
+                x_retro - x_atual,
+                y_retro - y_atual
+            )
+
+        self.restaurar_retro()
         self.atualizar_paraquedas()
         self.atualizar_retrofoguete(False)
 
@@ -1986,6 +2009,8 @@ class Aplicativo(ctk.CTk):
             outline="#FFD166",
             tags="retro"
         )
+
+        self.posicao_original_retro = self.canvas.coords("retro")
 
         # Pernas do módulo
         self.canvas.create_line(
@@ -2205,6 +2230,17 @@ class Aplicativo(ctk.CTk):
         self.empuxo_visualizador.grid(
             row=4, column=1, padx=10, pady=5, sticky="ew"
         )
+
+    def restaurar_retro(self):
+        itens = self.canvas.find_withtag("retro")
+
+        coordenadas_originais = [
+            [125, 85, 140, 85, 132, 112],
+            [180, 85, 195, 85, 187, 112]
+        ]
+
+        for item, coords in zip(itens, coordenadas_originais):
+            self.canvas.coords(item, *coords)
 
 
         
